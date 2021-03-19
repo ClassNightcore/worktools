@@ -173,8 +173,8 @@ const Followers = async function(session, id){
       cursor = await feed.getCursor();
     } while(feed.isMoreAvailable());
     return Promise.resolve(Pollowers);
-  } catch(err){
-    return Promise.reject(err);
+  } catch(success){
+    return Promise.reject(success);
   }
 }
 
